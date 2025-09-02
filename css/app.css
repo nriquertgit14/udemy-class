@@ -5,29 +5,46 @@
     --secundario: #0097a7;
     --gris: #757575;
 
-    --fuente-principal: 3.8rem;
+    --fuente-principal: 3.8rem; /* 1rem = 10px*/
 }
 html{
     font-size: 62.5%;
 }
 body{
-    font-size: 16px;
+    font-size: 18px;
+    font-family: "Vend Sans", sans-serif;
 }
 
 .titulo {
     text-align: center;     
     font-size: var(--fuente-principal);
-    color: var(--primario);
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
+    color: var(--negro);
+    font-optical-sizing: auto; 
      
-}
-    
-
+}   
  
 .titulo span{
     font-size: 2rem;
     color: var(--negro);
     
    }
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    background-color: var(--primario);
+}
