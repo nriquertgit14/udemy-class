@@ -38,13 +38,21 @@ body{
     background-color: var(--secundario);
 }
 
-.navegacion-principal{
-    padding: 1rem;
+.navegacion-principal{    
     display: flex;
     justify-content: space-around;
 }
 .navegacion-principal a{
     color: var(--blanco);
-    text-decoration: none;
-    background-color: var(--primario);
+    text-decoration: none;    
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 }
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+@media (min-width ) {
+     
+} 
