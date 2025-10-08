@@ -74,12 +74,37 @@ h1, h2, h3{
     border-radius: .5rem;/*Esquinas redondeadas*/
     width: 90%;
     text-align: center;
+    border: none;
 }
 @media (min-width: 768px) {
       .boton{
         width: auto;
       }
 }
+.boton:hover{
+    cursor: pointer;/*mano en los botones*/
+}
+
+/*Utilidades*/
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+      .w-sm-100{
+        width: auto;
+      }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
+
+}
+
 /*Navegación Principal*/
 .nav-bg{
     background-color: var(--secundario);
@@ -92,7 +117,7 @@ h1, h2, h3{
 }
 @media (min-width: 768px) {
      .navegacion-principal{
-        flex-direction: row;
+        flex-direction: row;        
         justify-content: space-around; 
      }
 } 
@@ -145,7 +170,7 @@ h1, h2, h3{
     grid-template-columns: repeat(3, 1fr);    
     /*grid: 200px 800px / 300px 300px;/*Filas/Columnas*/
     column-gap: 1rem;
-    }
+    }    
 }
 /*Servicios*/
 .servicio{
@@ -168,7 +193,7 @@ h1, h2, h3{
     background-color: var(--primario);
     border-radius: 50%;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;        
     align-items: center;
 }
 .servicio p{
@@ -179,7 +204,7 @@ h1, h2, h3{
 /**Contacto**/
 .formulario {
     background-color: var(--gris);
-    width: min(60rem, 100% ); /*min es utilizar más pequeño - Asignando el ancho al formulario */
+    width: min(60rem, 100% ); /*min es utilizar el valor más pequeño - Asignando el ancho al formulario */
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -190,10 +215,34 @@ h1, h2, h3{
 .formulario legend{
     text-align: center;
     font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
+    text-transform: uppercase;/*para las letras mayúsculas*/
+    font-weight: 700;/*muestra la letra negrita*/
     margin-bottom: 2rem;
     color: var(--primario);   
 }
+.contenedor-campos{
 
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{/*Seleccionando selector*/
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: block;/*tomará todo el espacio que exista disponible*/
 
+}
+/* Esta acción es una forma de dar formato a los input
+.campo input[type="text"], 
+.campo input[type="tel"],
+.campo input[type="email"] {
+    background-color: var(--primario);
+}*/ 
+
+.input-text{
+    width: 100%;/*Que tome todo el espacio disponible*/
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
